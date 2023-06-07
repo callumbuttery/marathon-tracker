@@ -1,6 +1,7 @@
 import { CountDown } from "../components/CountDown"
 import { DonationButton } from "../components/buttons/DonationButton"
 import { ViewEventButton } from "../components/buttons/ViewEvent"
+import { ProgressBar } from "../components/loading/ProgressBar";
 
 import Icon from '@mdi/react';
 import { mdiFlagCheckered, mdiRun } from '@mdi/js';
@@ -20,6 +21,7 @@ export const Landing: React.FC = () => {
                 <DonationButton />
                 <ViewEventButton />
             </div>
+            <ProgressBar/>
         </div>
     )
 }
