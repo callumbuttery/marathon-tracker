@@ -6,9 +6,17 @@ import { ScrollAnimator } from "../components/ScrollAnimator";
 
 import Icon from '@mdi/react';
 import { mdiFlagCheckered, mdiRun } from '@mdi/js';
+import axios from 'axios';
 
+export async function Landing(){
 
-export const Landing: React.FC = () => {
+    const data = await axios({
+        method: 'GET',
+        url: `https://www.strava.com/api/v3/athlete/activities?access_token=${import.meta.env.VITE_STRAVA_KEY}`,
+      });
+
+    console.log('data: ', data);
+
     return (
         <div className="h-screen bg-gradient-to-tl from-indigo-700 to-purple-700 pt-52">
             <div className="w-6/12 mx-auto rounded-2xl pb-2 pt-1 border-2">
