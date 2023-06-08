@@ -2,6 +2,7 @@ import { CountDown } from "../components/CountDown"
 import { DonationButton } from "../components/buttons/DonationButton"
 import { ViewEventButton } from "../components/buttons/ViewEvent"
 import { ProgressBar } from "../components/loading/ProgressBar";
+import { ScrollAnimator } from "../components/ScrollAnimator";
 
 import Icon from '@mdi/react';
 import { mdiFlagCheckered, mdiRun } from '@mdi/js';
@@ -27,8 +28,8 @@ export const Landing: React.FC = () => {
                 <div className="mt-4 mb-4">
                     <ProgressBar />
                 </div>
-
             </div>
+            <ScrollAnimator />
         </div>
     )
 }
