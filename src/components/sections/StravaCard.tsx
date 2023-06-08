@@ -6,8 +6,8 @@ interface stravaProps {
 export const StravaCard: React.FC<stravaProps> = ( item ) => {
     console.log(item);
     return (
-        <div>
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="w-96 ml-10 mt-24 drop-shadow-4xl hover:scale-110 hover:duration-300">
+            <div className="h-96 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                 </a>
