@@ -9,7 +9,7 @@ export const CountDown: React.FC = () => {
     const [Months, setMonths] = useState(0);
 
     useEffect(() => {
-        const time = moment("2023-09-29").valueOf() - moment(new Date()).valueOf();
+        const time = moment("2023-09-24").valueOf() - moment(new Date()).valueOf();
         setMinutes(moment.duration(time).minutes());
         setHours(moment.duration(time).hours());
         setDays(moment.duration(time).days());
@@ -20,28 +20,31 @@ export const CountDown: React.FC = () => {
         <div className="flex justify-center items-center mt-10 mb-10">
             <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span className="countdown font-mono text-2xl">
+                    <span className="countdown font-mono text-8xl text-white">
                         <span>{Months}</span>
                     </span>
-                    months
+                    M
                 </div>
-                <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span className="countdown font-mono text-2xl">
+                <div className='flex justify-center mt-5 text-6xl'>:</div>
+                <div className="flex flex-col p-2 bg-neutral rounded-box">
+                    <span className="countdown font-mono text-8xl text-white">
                         <span>{days}</span>
                     </span>
-                    days
+                    D
                 </div>
+                <div className='flex justify-center mt-5 text-6xl'>:</div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span className="countdown font-mono text-2xl">
+                    <span className="countdown font-mono text-8xl text-white">
                         <span>{hours}</span>
                     </span>
-                    hours
+                    H
                 </div>
+                <div className='flex justify-center mt-5 text-6xl'>:</div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span className="countdown font-mono text-2xl">
+                    <span className="countdown font-mono text-8xl text-white">
                         <span>{minutes}</span>
                     </span>
-                    min
+                    M
                 </div>
             </div>
         </div>

@@ -9,19 +9,26 @@ import { mdiFlagCheckered, mdiRun } from '@mdi/js';
 
 export const Landing: React.FC = () => {
     return (
-        <div className="h-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-400 to-blue-700 pt-60">
+        <div className="h-screen bg-gradient-to-tl from-indigo-700 to-purple-700 pt-52">
+            <div className="w-6/12 mx-auto rounded-2xl pb-2 pt-1 border-2">
+                <CountDown />
+                <div className="flex justify-center items-center font-mono text-xl mt-12 text-white">
+                    <Icon path={mdiRun} size={1} color={'white'} />
+                    <span className="ml-2 mr-2">Edinburgh Half Marathon 2023</span>
+                    <Icon path={mdiFlagCheckered} size={1.5} color={'white'} />
+                </div>
+                <div className="flex justify-center items-center font-mono text-xl text-white">
+                    24.09.23
+                </div>
+                <div className="flex justify-center mt-6">
+                    <DonationButton />
+                    <ViewEventButton />
+                </div>
+                <div className="mt-4 mb-4">
+                    <ProgressBar />
+                </div>
 
-            <div className="flex justify-center items-center mt-10 font-mono text-4xl">
-                <Icon path={mdiRun} size={1} color={'white'} />
-                <span className="ml-2 mr-2">Edinburgh Half Marathon 2023</span>
-                <Icon path={mdiFlagCheckered} size={1.5} color={'white'} />
             </div>
-            <CountDown />
-            <div className="flex justify-center mt-5">
-                <DonationButton />
-                <ViewEventButton />
-            </div>
-            <ProgressBar/>
         </div>
     )
 }
