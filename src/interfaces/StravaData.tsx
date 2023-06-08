@@ -26,7 +26,11 @@ export interface StavaData {
     location_country: string,
     location_state: string,
     manual: boolean,
-    map: {},
+    map: {
+        id: string,
+        resource_state: number,
+        summary_polyline: string,
+    },
     max_heartrate: number,
     max_speed: number,
     moving_time: number,
