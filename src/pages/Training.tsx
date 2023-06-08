@@ -14,7 +14,7 @@ export const Training: React.FC = () => {
                     method: 'GET',
                 })
 
-                if(!response.data) {
+                if (!response.data) {
                     throw new Error('Failed to get strava data');
                 }
 
@@ -33,8 +33,8 @@ export const Training: React.FC = () => {
             <h1 className="text-6xl flex justify-center text-white font-mono tracking-widest">TRAINING DIARY</h1>
             <div className="flex justify-center mt-32">
                 {
-                    stravaData.map(({activity}: any)=> {
-                        return <StravaCard />
+                    stravaData.map((item, key) => {
+                        return <StravaCard dataObj={item} key={key} />
                     })
                 }
             </div>

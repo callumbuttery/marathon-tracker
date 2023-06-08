@@ -1,4 +1,10 @@
-export const StravaCard: React.FC = () => {
+interface stravaProps {
+    dataObj: object,
+    key: number,
+}
+
+export const StravaCard: React.FC<stravaProps> = ( item ) => {
+    console.log(item);
     return (
         <div>
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
