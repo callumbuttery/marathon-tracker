@@ -2,7 +2,9 @@ import axios from 'axios'
 
 export async function fetchStravaData() {
     try {
-        let response = await axios(`https://www.strava.com/api/v3/athlete/activities?access_token=${import.meta.env.VITE_STRAVA_KEY}`, {
+
+        
+        const response = await axios(`https://l23i44mhna.execute-api.eu-west-1.amazonaws.com/strava`, {
             method: 'GET',
         })
 
