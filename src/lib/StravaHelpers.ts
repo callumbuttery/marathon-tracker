@@ -6,6 +6,9 @@ export async function fetchStravaData() {
         
         const response = await axios(`https://l23i44mhna.execute-api.eu-west-1.amazonaws.com/strava`, {
             method: 'GET',
+            headers: {
+                'x-api-key': import.meta.env.VITE_API_GATEWAY_KEY,
+            }
         })
 
         if (!response.data) {
