@@ -1,4 +1,5 @@
 import { StavaData } from "../../interfaces/StravaData";
+import { getCardImg } from "../../lib/GoogleHelpers";
 
 interface expectedProps {
     obj: StavaData
@@ -11,12 +12,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
         displayDistance = <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Distance: {(Math.floor(props.obj.distance * 100) / 100000).toFixed(2)}km</p>
     }
 
-    let displayMap;
-    if (props.obj.map.summary_polyline) {
-        //fetchGoogleData();
-        displayMap = <img className="rounded-t-lg h-48 w-96" src={`http://maps.googleapis.com/maps/api/staticmap?path=enc:${props.obj.map.summary_polyline}&size=600x400&zoom=13&format=jpg&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`}></img>
-    }
-
+    const displayMap = getCardImg(props.obj.map.summary_polyline)
 
 
     return (
