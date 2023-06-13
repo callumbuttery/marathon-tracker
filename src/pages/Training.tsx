@@ -2,6 +2,7 @@ import { StravaCard } from "../components/sections/StravaCard"
 import { useEffect, useState } from 'react';
 
 import { fetchStravaData } from "../lib/StravaHelpers";
+import { StavaData } from "../interfaces/StravaData";
 
 export const Training: React.FC = () => {
 
@@ -11,7 +12,13 @@ export const Training: React.FC = () => {
         async function callStrava() {
             const data = await fetchStravaData();
 
-            if(data) setStravaData(data);
+            if (data && !data.errorType) {
+                setStravaData(data.map((item: StavaData) => {
+                    return <StravaCard obj={item} />
+                }))
+            }
+
+
         }
 
         callStrava();
@@ -22,9 +29,7 @@ export const Training: React.FC = () => {
             <h1 className="text-6xl flex justify-center text-white font-mono tracking-widest">TRAINING DIARY</h1>
             <div className="place-items-center pt-10 pb-32 max-w-fit flex-wrap mx-auto max-sm:ml-8 flex justify-center max-sm:inline-block">
                 {
-                    stravaData.map(item => {
-                        return <StravaCard obj={item} />
-                    })
+                    stravaData                        
                 }
             </div>
         </div>
