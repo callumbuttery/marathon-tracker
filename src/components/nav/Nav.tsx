@@ -9,7 +9,9 @@ export const Nav: React.FC = () => {
                         <div className="pt-7 flex p-4 mt-4 drop-shadow-4xl  md:flex-row md:space-x-20 md:mt-0 md:text-sm md:font-medium">
                             <RouterLink className="text-lg block py-2 pl-3 pr-3 text-white drop-shadow-4xl hover:text-[#FF5733] hover:scale-110 hover:duration-300 tracking-[.15em] font-header md:hover:bg-transparent md:p-0" to='/'>Home</RouterLink>
 
-                            <RouterLink className="text-lg block py-2 pl-3 pr-3 text-white drop-shadow-4xl hover:text-[#FF5733] hover:scale-110 hover:duration-300 tracking-[.15em] font-header md:hover:bg-transparent md:p-0" to='/Training'>Past events</RouterLink>
+                            <RouterLink className="text-lg block py-2 pl-3 pr-3 text-white drop-shadow-4xl hover:text-[#FF5733] hover:scale-110 hover:duration-300 tracking-[.15em] font-header md:hover:bg-transparent md:p-0" to='/past-events'>Past events</RouterLink>
+                            
+                            <RouterLink className="text-lg block py-2 pl-3 pr-3 text-white drop-shadow-4xl hover:text-[#FF5733] hover:scale-110 hover:duration-300 tracking-[.15em] font-header md:hover:bg-transparent md:p-0" to='/training'>Training</RouterLink>
                         </div>
                     </div>
                 </div>
