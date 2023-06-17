@@ -10,7 +10,7 @@ export const PastEvents: React.FC = () => {
 
     return (
         <div>
-            <div className="h-screen bg-gradient-to-tl from-indigo-700 to-purple-700 pt-32">
+            <div className="h-screen bg-gradient-to-tl from-blue-700 to-sky-400 pt-32">
                 <h1 className="text-6xl flex justify-center text-white font-mono tracking-widest">PAST EVENTS</h1>
             </div>
         </div>
