@@ -23,28 +23,28 @@ export const CountDown: React.FC = () => {
                     <span className="countdown font-mono text-8xl text-white">
                         <span>{Months}</span>
                     </span>
-                    M
+                    <span className='text-white'>M</span>
                 </div>
                 <div className='flex justify-center mt-5 text-6xl'>:</div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box">
                     <span className="countdown font-mono text-8xl text-white">
                         <span>{days}</span>
                     </span>
-                    D
+                    <span className='text-white'>D</span>
                 </div>
                 <div className='flex justify-center mt-5 text-6xl'>:</div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                     <span className="countdown font-mono text-8xl text-white">
                         <span>{hours}</span>
                     </span>
-                    H
+                    <span className='text-white'>H</span>
                 </div>
                 <div className='flex justify-center mt-5 text-6xl'>:</div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                     <span className="countdown font-mono text-8xl text-white">
                         <span>{minutes}</span>
                     </span>
-                    M
+                    <span className='text-white'>M</span>
                 </div>
             </div>
         </div>
