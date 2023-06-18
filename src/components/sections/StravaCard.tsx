@@ -12,7 +12,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
         displayDistance = <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Distance: {(Math.floor(props.obj.distance * 100) / 100000).toFixed(2)}km</p>
     }
 
-    const displayMap = getCardImg(props.obj.map.summary_polyline)
+    const displayMap = getCardImg(props?.obj?.map?.summary_polyline)
 
 
     return (
