@@ -25,7 +25,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
 
 
     return (
-        <div className="w-96 ml-10 mt-24 drop-shadow-4xl hover:scale-110 hover:duration-300">
+        <div className="w-96 mx-10 mt-24 drop-shadow-4xl hover:scale-110 hover:duration-300">
             <div className="h-96 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     {

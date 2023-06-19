@@ -7,16 +7,18 @@ export const PastEvents: React.FC = () => {
 
     const dataObj = {
         name: 'Tough Mudder 2023',
-        distance: 17.62,
+        //will be divided into km
+        distance: 17620,
         type: 'Event',
     }
 
     return (
-        <div>
-            <div className="h-max bg-gradient-to-tl from-blue-700 to-sky-400 pt-32">
-                <h1 className="text-6xl flex justify-center text-white font-mono tracking-widest">PAST EVENTS</h1>
-
-                <StravaCard obj={dataObj}/>
+        <div className="h-screen bg-gradient-to-tl from-blue-700 to-sky-400 pt-32">
+            <div className='flex justify-center'>
+                <h1 className="text-6xl text-white font-mono tracking-widest">PAST EVENTS</h1>
+            </div>
+            <div className='flex justify-center'>
+                <StravaCard obj={dataObj} />
             </div>
         </div>
     )
