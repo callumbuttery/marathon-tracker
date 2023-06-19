@@ -8,7 +8,7 @@ export const PastEvents: React.FC = () => {
     const dataObj = {
         name: 'Tough Mudder 2023',
         distance: 17.62,
-        type: 'Event'
+        type: 'Event',
     }
 
     return (

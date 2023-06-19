@@ -1,5 +1,6 @@
 import { StavaData } from "../../interfaces/StravaData";
-import { getCardImg } from "../../lib/GoogleHelpers";
+import workoutImage from '../../assets/kelly-sikkema-IZOAOjvwhaM-unsplash.jpg'
+import toughMudder2023 from '../../assets/toughmudder2023.jpg'
 
 interface expectedProps {
     obj: StavaData
@@ -12,7 +13,15 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
         displayDistance = <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Distance: {(Math.floor(props.obj.distance * 100) / 100000).toFixed(2)}km</p>
     }
 
-    const displayMap = getCardImg(props?.obj?.map?.summary_polyline)
+    let displayMap;
+    if (props?.obj?.map?.summary_polyline) {
+        displayMap = <img className="rounded-t-lg h-48 w-96" src={`http://maps.googleapis.com/maps/api/staticmap?path=enc:${props?.obj?.map?.summary_polyline}&size=600x400&zoom=13&format=jpg&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`}></img>
+    } else if (props.obj.name == 'Tough Mudder 2023' && !props?.obj?.map?.summary_polyline) {
+        displayMap = <img className="rounded-t-lg h-48 w-96" src={toughMudder2023}></img>
+    } else {
+        displayMap = <img className="rounded-t-lg h-48 w-96" src={workoutImage}></img>
+    }
+
 
 
     return (
@@ -20,7 +29,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
             <div className="h-96 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     {
-                        displayMap
+                            displayMap
                     }
                 </a>
                 <div className="p-5">
