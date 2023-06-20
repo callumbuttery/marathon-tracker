@@ -52,14 +52,14 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                         }
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
                             <span className="countdown font-mono">
-                                <span>113</span>
+                                <span>{props.obj.average_heartrate}</span>
                             </span>
                             <span className=''>Average HR</span>
                             <Icon className="flex mx-auto" path={mdiHeart} size={1} color={'red'} />
                         </div>
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
                             <span className="countdown font-mono">
-                                <span>160</span>
+                                <span>{props.obj.max_heartrate}</span>
                             </span>
                             <span className=''>Max HR</span>
                             <Icon className="flex mx-auto" path={mdiHeartFlash} size={1} color={'red'} />
