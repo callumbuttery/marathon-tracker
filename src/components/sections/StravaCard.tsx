@@ -2,6 +2,9 @@ import { StavaData } from "../../interfaces/StravaData";
 import workoutImage from '../../assets/kelly-sikkema-IZOAOjvwhaM-unsplash.jpg'
 import toughMudder2023 from '../../assets/toughmudder2023.jpg'
 
+import Icon from '@mdi/react';
+import { mdiHeart, mdiHeartFlash, mdiMapMarkerDistance } from '@mdi/js';
+
 interface expectedProps {
     obj: StavaData
 }
@@ -10,7 +13,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
 
     let displayDistance;
     if (props.obj.distance) {
-        displayDistance = <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Distance: {(Math.floor(props.obj.distance * 100) / 100000).toFixed(2)}km</p>
+        displayDistance = <p className="flex justify-center text-center font-mono">{(Math.floor(props.obj.distance * 100) / 100000).toFixed(2)}km</p>
     }
 
     let displayMap;
@@ -34,23 +37,29 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                 </a>
                 <div className="p-5">
                     <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.obj.name}</h5>
+                        <h5 className="flex justify-center text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.obj.name}</h5>
                     </a>
-                    {
-                        displayDistance
-                    }
-                    <div className="flex justify-center">
+                    <div className="flex justify-center mt-8">
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                            <span className="countdown font-mono">
-                                <span>{props.obj.average_heartrate}</span>
-                            </span>
-                            <span className=''>Average HR</span>
+                            {
+                                displayDistance
+                            }
+                            <span className=''>Distance</span>
+                            <Icon className="flex mx-auto" path={mdiMapMarkerDistance} size={1} color={'purple'} />
                         </div>
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
                             <span className="countdown font-mono">
-                                <span>{props.obj.max_heartrate}</span>
+                                <span>113</span>
+                            </span>
+                            <span className=''>Average HR</span>
+                            <Icon className="flex mx-auto" path={mdiHeart} size={1} color={'red'} />
+                        </div>
+                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
+                            <span className="countdown font-mono">
+                                <span>160</span>
                             </span>
                             <span className=''>Max HR</span>
+                            <Icon className="flex mx-auto" path={mdiHeartFlash} size={1} color={'red'} />
                         </div>
                     </div>
                 </div>
