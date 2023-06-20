@@ -13,7 +13,14 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
 
     let displayDistance;
     if (props.obj.distance) {
-        displayDistance = <p className="flex justify-center text-center font-mono">{(Math.floor(props.obj.distance * 100) / 100000).toFixed(2)}km</p>
+        displayDistance =
+            <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
+                <p className="flex justify-center text-center font-mono">{(Math.floor(props.obj.distance * 100) / 100000).toFixed(2)}km</p>
+                <span className=''>Distance</span>
+                <Icon className="flex mx-auto" path={mdiMapMarkerDistance} size={1} color={'purple'} />
+            </div>
+
+
     }
 
     let displayMap;
@@ -40,13 +47,9 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                         <h5 className="flex justify-center text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.obj.name}</h5>
                     </a>
                     <div className="flex justify-center mt-8">
-                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                            {
-                                displayDistance
-                            }
-                            <span className=''>Distance</span>
-                            <Icon className="flex mx-auto" path={mdiMapMarkerDistance} size={1} color={'purple'} />
-                        </div>
+                        {
+                            displayDistance
+                        }
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
                             <span className="countdown font-mono">
                                 <span>113</span>
