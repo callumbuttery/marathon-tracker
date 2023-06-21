@@ -13,11 +13,14 @@ export const Training: React.FC = () => {
         async function callStrava() {
             const data = await fetchStravaData();
 
-            console.log('data: ', data);
-            if (data && !data.errorType) {
+            if (data?.allActivitiesData && !data.errorType) {
                 setStravaData(data.allActivitiesData.map((item: StavaData) => {
                     return <StravaCard obj={item} />
                 }))
+            }
+
+            if (data?.exerciseData && !data.errorType) {
+                console.log('hitting data.exercise');
             }
 
 
