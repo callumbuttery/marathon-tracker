@@ -22,3 +22,11 @@ export async function fetchStravaData() {
     }
 }
 
+export function distanceCalculator(distance: number) {
+    try {
+        return (Math.floor(distance * 100) / 100000).toFixed(2)
+    }  catch (e) {
+        alert(e);
+    }
+}
+

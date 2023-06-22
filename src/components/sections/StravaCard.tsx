@@ -5,6 +5,8 @@ import toughMudder2023 from '../../assets/toughmudder2023.jpg'
 import Icon from '@mdi/react';
 import { mdiHeart, mdiHeartFlash, mdiMapMarkerDistance, mdiTrophyVariant, mdiStar } from '@mdi/js';
 
+import { distanceCalculator } from "../../lib/StravaHelpers";
+
 interface expectedProps {
     obj: StavaData
 }
@@ -15,7 +17,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
     if (props.obj.distance) {
         displayDistance =
             <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                <p className="flex justify-center text-center font-mono">{(Math.floor(props.obj.distance * 100) / 100000).toFixed(2)}km</p>
+                <p className="flex justify-center text-center font-mono">{distanceCalculator(props.obj.distance)}km</p>
                 <span className=''>Distance</span>
                 <Icon className="flex mx-auto" path={mdiMapMarkerDistance} size={1} color={'purple'} />
             </div>
