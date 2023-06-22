@@ -3,7 +3,7 @@ import workoutImage from '../../assets/kelly-sikkema-IZOAOjvwhaM-unsplash.jpg'
 import toughMudder2023 from '../../assets/toughmudder2023.jpg'
 
 import Icon from '@mdi/react';
-import { mdiHeart, mdiHeartFlash, mdiMapMarkerDistance } from '@mdi/js';
+import { mdiHeart, mdiHeartFlash, mdiMapMarkerDistance, mdiTrophyVariant, mdiStar } from '@mdi/js';
 
 interface expectedProps {
     obj: StavaData
@@ -36,6 +36,11 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
 
     return (
         <div className="w-96 mx-10 mt-24 drop-shadow-4xl hover:scale-110 hover:duration-300">
+            {
+                props.obj.type == 'Event' &&
+                <Icon path={mdiTrophyVariant} size={2} color="gold" className="flex mx-auto mb-2" />
+
+            }
             <div className="h-96 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     {
