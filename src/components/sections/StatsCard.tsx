@@ -1,7 +1,10 @@
 import Icon from '@mdi/react';
 import { mdiHeart, mdiHeartFlash } from '@mdi/js';
 
-export const StatsCard: React.FC = () => {
+import { StatisticsInterface } from '../../interfaces/StatisticsInterface';
+
+export const StatsCard: React.FC<StatisticsInterface> = (props) => {
+    console.log('props: ', props);
     return (
         <div>
             <div className="bg-white max-w-md mx-auto rounded-lg mt-16">
