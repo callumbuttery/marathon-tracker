@@ -10,6 +10,8 @@ export const PastEvents: React.FC = () => {
         //will be divided into km
         distance: 17620,
         type: 'Event',
+        max_heartrate: 157,
+        average_heartrate: 127,
     }
 
     return (
