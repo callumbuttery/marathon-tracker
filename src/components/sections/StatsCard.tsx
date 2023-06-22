@@ -6,10 +6,9 @@ import { StatisticsInterface } from '../../interfaces/StatisticsInterface';
 import { distanceCalculator } from '../../lib/StravaHelpers';
 
 export const StatsCard: React.FC<StatisticsInterface> = (props) => {
-    console.log('props: ', props);
     return (
         <div className=''>
-            <div className='mx-auto flex grid grid-cols-2 gap-0 w-7/12 mt-24'>
+            <div className='mx-auto flex grid grid-cols-2 gap-0 w-7/12 mt-24 drop-shadow-2xl'>
                 <div className="bg-white max-w-md mx-auto rounded-lg">
                     <span className='text-black flex justify-center'>
                         Recent Run Stats
