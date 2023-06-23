@@ -34,7 +34,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
         displayMap = <img className="rounded-t-lg h-48 w-96" src={workoutImage}></img>
     }
 
-
+    
 
     return (
         <div className="w-96 mx-10 mt-24 drop-shadow-2  xl hover:scale-110 hover:duration-300">

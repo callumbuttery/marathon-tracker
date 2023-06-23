@@ -6,6 +6,8 @@ import { StavaData } from "../interfaces/StravaData";
 
 import { StatsCard } from "../components/sections/StatsCard";
 
+import { SkeletonLoader } from "../components/loading/SkeletonLoader";
+
 
 export const Training: React.FC = () => {
 
@@ -35,6 +37,8 @@ export const Training: React.FC = () => {
     function setStatsData() {
         if(stats){
             return <StatsCard exerciseData={stats} />
+        } else {
+            return <SkeletonLoader />
         }
     }
 
