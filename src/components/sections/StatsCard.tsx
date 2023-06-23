@@ -1,6 +1,3 @@
-import Icon from '@mdi/react';
-import { mdiTimerCheck, mdiRun, mdiCounter } from '@mdi/js';
-
 import { StatisticsInterface } from '../../interfaces/StatisticsInterface';
 
 import { StatsCardSubSestion } from './StatsCardSubSection';
