@@ -39,7 +39,7 @@ export const Training: React.FC = () => {
         if(stats){
             return <StatsCard exerciseData={stats} />
         } else {
-            return <StatsSkeleton  />
+            return <div className="flex justify-center ml-10 mr-10"> <StatsSkeleton />  <StatsSkeleton /></div>
         }
     }
 
@@ -51,7 +51,7 @@ export const Training: React.FC = () => {
                 }
             <div className="place-items-center pt-10 pb-32 max-w-fit flex-wrap mx-auto max-sm:ml-8 flex justify-center max-sm:inline-block">
                 {
-                    activityData.length ? activityData : <StravaCardSkeleton />                       
+                    activityData.length ? activityData : <StravaCardSkeleton />   
                 }
             </div>
         </div>
