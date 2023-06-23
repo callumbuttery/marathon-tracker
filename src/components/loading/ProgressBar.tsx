@@ -1,5 +1,3 @@
-import Icon from '@mdi/react';
-import { mdiPartyPopper, mdiEmoticonSadOutline } from '@mdi/js';
 import { getCharityData } from '../../lib/CharityHelpers';
 
 import { useEffect, useState } from 'react'

@@ -6,7 +6,8 @@ import { StavaData } from "../interfaces/StravaData";
 
 import { StatsCard } from "../components/sections/StatsCard";
 
-import { SkeletonLoader } from "../components/loading/SkeletonLoader";
+import { StravaCardSkeleton } from "../components/loading/StravaCardSkeleton";
+import { StatsSkeleton } from "../components/loading/StatsSkeleton";
 
 
 export const Training: React.FC = () => {
@@ -38,7 +39,7 @@ export const Training: React.FC = () => {
         if(stats){
             return <StatsCard exerciseData={stats} />
         } else {
-            return <SkeletonLoader />
+            return <StatsSkeleton  />
         }
     }
 
@@ -50,7 +51,7 @@ export const Training: React.FC = () => {
                 }
             <div className="place-items-center pt-10 pb-32 max-w-fit flex-wrap mx-auto max-sm:ml-8 flex justify-center max-sm:inline-block">
                 {
-                    activityData                        
+                    activityData.length ? activityData : <StravaCardSkeleton />                       
                 }
             </div>
         </div>

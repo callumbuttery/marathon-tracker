@@ -3,7 +3,7 @@ import workoutImage from '../../assets/kelly-sikkema-IZOAOjvwhaM-unsplash.jpg'
 import toughMudder2023 from '../../assets/toughmudder2023.jpg'
 
 import Icon from '@mdi/react';
-import { mdiHeart, mdiHeartFlash, mdiMapMarkerDistance, mdiTrophyVariant, mdiStar } from '@mdi/js';
+import { mdiHeart, mdiHeartFlash, mdiMapMarkerDistance, mdiTrophyVariant } from '@mdi/js';
 
 import { distanceCalculator } from "../../lib/StravaHelpers";
 
@@ -21,8 +21,6 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                 <span className=''>Distance</span>
                 <Icon className="flex mx-auto" path={mdiMapMarkerDistance} size={1} color={'purple'} />
             </div>
-
-
     }
 
     let displayMap;
@@ -34,7 +32,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
         displayMap = <img className="rounded-t-lg h-48 w-96" src={workoutImage}></img>
     }
 
-    
+
 
     return (
         <div className="w-96 mx-10 mt-24 drop-shadow-2  xl hover:scale-110 hover:duration-300">
