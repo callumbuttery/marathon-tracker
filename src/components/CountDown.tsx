@@ -20,31 +20,31 @@ export const CountDown: React.FC = () => {
         <div className="flex justify-center items-center mt-10 mb-10">
             <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span className="countdown font-mono text-8xl text-white">
+                    <span className="countdown font-Teko text-8xl text-white">
                         <span>{Months}</span>
                     </span>
-                    <span className='text-black'>Months</span>
+                    <span className='text-black font-Teko'>Months</span>
                 </div>
                 <div className='flex justify-center mt-5 text-6xl'>:</div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box">
-                    <span className="countdown font-mono text-8xl text-white">
+                    <span className="countdown font-Teko text-8xl text-white">
                         <span>{days}</span>
                     </span>
-                    <span className='text-black'>Days</span>
+                    <span className='text-black font-Teko'>Days</span>
                 </div>
                 <div className='flex justify-center mt-5 text-6xl'>:</div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span className="countdown font-mono text-8xl text-white">
+                    <span className="countdown font-Teko text-8xl text-white">
                         <span>{hours}</span>
                     </span>
-                    <span className='text-black'>Hours</span>
+                    <span className='text-black font-Teko'>Hours</span>
                 </div>
                 <div className='flex justify-center mt-5 text-6xl'>:</div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span className="countdown font-mono text-8xl text-white">
+                    <span className="countdown font-Teko text-8xl text-white">
                         <span>{minutes}</span>
                     </span>
-                    <span className='text-black'>Minutes</span>
+                    <span className='text-black font-Teko'>Minutes</span>
                 </div>
             </div>
         </div>
