@@ -2,7 +2,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 export const Nav: React.FC = () => {
     return (
-        <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
+        <div>
             <nav className="bg-transparent h-24 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-transparent">
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
                     <div className="flex mx-auto justify-center w-full">
