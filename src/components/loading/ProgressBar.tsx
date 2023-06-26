@@ -21,20 +21,20 @@ export const ProgressBar: React.FC = () => {
 
     return (
         <div className='' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00">
-            <span className="flex justify-center items-center mt-10 font-Teko text-xl pt-1 text-white">Total Raised</span>
+            <span className="flex justify-center items-center mt-10 font-teko text-xl pt-1 text-white">Total Raised</span>
             <div className="flex justify-center items-center">
-                <div className="font-Teko text-xl text-white flex">
+                <div className="font-teko text-xl text-white flex">
                     {/* <Icon path={mdiEmoticonSadOutline} size={1} className='mr-2 ml-2' color={'white'} /> */}
                     £0
                 </div>
                 <div className="ml-5 mr-5 w-5/12 bg-gray-200 rounded-full dark:bg-gray-700">
                     <div className="bg-gradient-to-r from-purple-600 to-blue-500 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full font-teko" style={{ width: percentageRaised + "%" }}> {percentageRaised}%</div>
                 </div>
-                <div className="font-Teko text-xl text-white flex">£{target}
+                <div className="font-teko text-xl text-white flex">£{target}
                     {/* <Icon path={mdiPartyPopper} size={1} className='ml-2 mr-2' color={'white'} /> */}
                 </div>
             </div>
-            <span className="flex justify-center items-center font-Teko text-xl  text-white">For Cancer Research UK</span>
+            <span className="flex justify-center items-center font-teko text-xl  text-white">For Cancer Research UK</span>
         </div>
     )
 }
