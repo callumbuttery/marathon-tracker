@@ -45,7 +45,7 @@ export const Training: React.FC = () => {
 
     return (
         <div className="h-max bg-gradient-to-tl from-red-600 to-orange-500 pt-32">
-            <h1 className="text-6xl flex justify-center text-white font-mono tracking-widest">TRAINING DIARY</h1>
+            <h1 className="text-6xl flex justify-center text-white font-Teko tracking-widest">TRAINING DIARY</h1>
                 { 
                     setStatsData() 
                 }
