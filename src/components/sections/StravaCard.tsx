@@ -17,8 +17,8 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
     if (props.obj.distance) {
         displayDistance =
             <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                <p className="flex justify-center text-center font-mono">{distanceCalculator(props.obj.distance)}km</p>
-                <span className=''>Distance</span>
+                <p className="flex justify-center text-center font-teko">{distanceCalculator(props.obj.distance)}km</p>
+                <span className='font-teko'>Distance</span>
                 <Icon className="flex mx-auto" path={mdiMapMarkerDistance} size={1} color={'purple'} />
             </div>
     }
@@ -56,17 +56,17 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                             displayDistance
                         }
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                            <span className="countdown font-mono">
+                            <span className="countdown font-teko">
                                 <span>{props.obj.average_heartrate?.toFixed(0)}</span>
                             </span>
-                            <span className=''>Average HR</span>
+                            <span className='font-teko'>Average HR</span>
                             <Icon className="flex mx-auto" path={mdiHeart} size={1} color={'red'} />
                         </div>
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                            <span className="countdown font-mono">
+                            <span className="countdown font-teko">
                                 <span>{props.obj.max_heartrate?.toFixed(0)}</span>
                             </span>
-                            <span className=''>Max HR</span>
+                            <span className='font-teko'>Max HR</span>
                             <Icon className="flex mx-auto" path={mdiHeartFlash} size={1} color={'red'} />
                         </div>
                     </div>

@@ -24,19 +24,19 @@ export const StatsCardSubSestion: React.FC<statsData> = (props) => {
                 <div className='py-2 px-2'>
                     <div className="flex justify-center">
                         <div className="flex justify-center mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                            <span className="countdown font-mono">
+                            <span className="countdown font-teko">
                                 <span>{props.statsData.count} Runs</span>
                             </span>
                             <Icon className="flex mx-auto" path={mdiCounter} size={1} color={'black'} />
                         </div>
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                            <span className="countdown font-mono">
+                            <span className="countdown font-teko">
                                 <span>{distanceCalculator(props.statsData.distance)}km</span>
                             </span>
                             <Icon className="flex mx-auto" path={mdiRun} size={1} color={'red'} />
                         </div>
                         <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
-                            <span className="countdown font-mono">
+                            <span className="countdown font-teko">
                                 <span>{(props.statsData.elapsed_time / 3600).toFixed(2)} Hours</span>
                             </span>
                             <Icon className="flex mx-auto" path={mdiTimerCheck} size={1} color={'blue'} />
