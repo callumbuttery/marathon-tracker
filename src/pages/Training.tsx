@@ -49,7 +49,7 @@ export const Training: React.FC = () => {
                 { 
                     setStatsData() 
                 }
-            <div className="place-items-center pt-10 pb-32 max-w-fit flex-wrap mx-auto max-sm:ml-8 flex justify-center max-sm:inline-block">
+            <div className="place-items-center pt-10 pb-32 max-w-fit flex-wrap mx-auto max-sm:ml-0 flex justify-center">
                 {
                     activityData.length ? activityData : <StravaCardSkeleton />   
                 }
