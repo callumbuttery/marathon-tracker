@@ -15,7 +15,7 @@ export const Landing: React.FC = () => {
                     <CountDown />
                     <div className="flex justify-center items-center font-teko text-xl mt-12 text-white">
                         <Icon path={mdiRun} size={1} color={'white'} />
-                        <span className="ml-2 mr-2 font-teko">Edinburgh Half Marathon 2023</span>
+                        <span className="ml-2 mr-2 font-teko max-md:text-sm">Edinburgh Half Marathon 2023</span>
                         <Icon path={mdiFlagCheckered} size={1.5} color={'white'} />
                     </div>
                     <div className="flex justify-center items-center font-teko text-xl text-white">
