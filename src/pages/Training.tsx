@@ -51,7 +51,7 @@ export const Training: React.FC = () => {
                 }
             <div className="place-items-center pt-10 pb-32 max-w-fit flex-wrap mx-auto max-sm:ml-8 flex justify-center max-sm:inline-block">
                 {
-                    !activityData.length ? activityData : <StravaCardSkeleton />   
+                    activityData.length ? activityData : <StravaCardSkeleton />   
                 }
             </div>
         </div>
