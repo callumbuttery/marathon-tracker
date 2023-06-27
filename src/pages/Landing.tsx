@@ -10,10 +10,10 @@ export const Landing: React.FC = () => {
 
     return (
         <div>
-            <div className="h-full bg-gradient-to-tl from-purple-700 to-blue-700 pt-52 pb-24">
+            <div className="h-screen bg-gradient-to-tl from-purple-700 to-blue-700 pt-52 pb-24">
                 <div className="w-6/12 mx-auto rounded-2xl pb-2 pt-1 bg-gradient-to-br from-orange-500 to-red-600 drop-shadow-2xl">
                     <CountDown />
-                    <div className="flex justify-center items-center font-mono text-xl mt-12 text-white">
+                    <div className="flex justify-center items-center font-teko text-xl mt-12 text-white">
                         <Icon path={mdiRun} size={1} color={'white'} />
                         <span className="ml-2 mr-2 font-teko">Edinburgh Half Marathon 2023</span>
                         <Icon path={mdiFlagCheckered} size={1.5} color={'white'} />
