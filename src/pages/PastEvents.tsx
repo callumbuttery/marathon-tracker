@@ -12,11 +12,11 @@ export const PastEvents: React.FC = () => {
     }
 
     return (
-        <div className="h-screen bg-gradient-to-tl from-blue-700 to-sky-400 pt-32">
+        <div className="h-full bg-gradient-to-tl from-blue-700 to-sky-400 pt-32">
             <div className='flex justify-center'>
                 <h1 className="text-6xl text-white font-teko tracking-widest max-md:text-3xl">PAST EVENTS</h1>
             </div>
-            <div className='flex justify-center'>
+            <div className='flex justify-center pb-72'>
                 <StravaCard obj={dataObj} />
             </div>
         </div>
