@@ -36,7 +36,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
         <div className="w-96 mx-10 mt-24 drop-shadow-2xl hover:scale-110 hover:duration-300 max-sm:w-72 max-sm:mx-0">
             {
                 props.obj.type == 'Event' &&
-                <Icon path={mdiTrophyVariant} size={2} color="gold" className="flex mx-auto mb-2" />
+                <Icon path={mdiTrophyVariant} size={2} color="gold" className="flex justify-center mx-auto mb-2" />
 
             }
             <div className="h-96 max-w-sm bg-white rounded-lg shadow">

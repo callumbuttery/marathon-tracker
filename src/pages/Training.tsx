@@ -39,7 +39,7 @@ export const Training: React.FC = () => {
         if(stats){
             return <StatsCard exerciseData={stats} />
         } else {
-            return <div className="flex justify-center ml-10 mr-10"> <StatsSkeleton />  <StatsSkeleton /></div>
+            return <div className="flex grid grid-cols-2 max-w-xl mx-auto max-md:grid-cols-1"> <StatsSkeleton />  <StatsSkeleton /></div>
         }
     }
 
