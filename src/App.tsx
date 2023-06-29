@@ -5,16 +5,8 @@ import { Training } from './pages/Training'
 import { PastEvents } from './pages/PastEvents'
 import { Nav } from './components/nav/Nav'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react'
 
 function App() {
-
-  //init animation package
-  useEffect(() => {
-    setTimeout(function () { AOS.init(); }, 1000);
-  }, [])
 
   return (
     <div className="App">

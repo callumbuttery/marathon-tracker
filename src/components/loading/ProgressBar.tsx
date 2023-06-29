@@ -20,7 +20,7 @@ export const ProgressBar: React.FC = () => {
     }, [])
 
     return (
-        <div className='' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00">
+        <div className=''>
             <span className="flex justify-center items-center mt-10 font-teko text-xl pt-1 text-white">Total Raised</span>
             <div className="flex justify-center items-center">
                 <div className="font-teko text-xl text-white flex">
