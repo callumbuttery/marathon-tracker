@@ -1,6 +1,3 @@
-import Icon from '@mdi/react';
-import { mdiFlagCheckered, mdiRun } from '@mdi/js';
-
 import { StravaCard } from '../components/sections/StravaCard';
 
 export const PastEvents: React.FC = () => {
