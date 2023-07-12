@@ -21,7 +21,7 @@ export const CountDown: React.FC = () => {
 
     
     return (
-        <div className="flex justify-center items-center mt-10 mb-10 ">
+        <div className="flex justify-center items-center mt-10 mb-10">
             <div className="grid grid-flow-col gap-2 text-center auto-cols-max max-md:gap-1">
                 <div className="flex flex-col p-2 rounded-box text-neutral-content">
                     <span className="font-teko text-8xl text-white max-md:text-4xl">
