@@ -1,6 +1,6 @@
 export const StravaCardSkeleton: React.FC = () => {
     return (
-        <div className="max-md:mx-auto">
+        <div className="max-md:pb-10">
             <div className="mx-auto bg-white shadow-2xl w-96 rounded-2xl animate-pulse mt-16 mb-8 max-md:w-72">
                 <div className="h-48 p-3 overflow-hidden bg-gray-200 animate-pulse rounded-2xl">
                 </div>

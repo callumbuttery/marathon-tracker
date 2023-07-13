@@ -39,7 +39,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                 <Icon path={mdiTrophyVariant} size={2} color="gold" className="flex justify-center mx-auto mb-2" />
 
             }
-            <div className="h-96 max-w-sm bg-white rounded-lg shadow max-sm:pb-10">
+            <div className="h-96 max-w-sm bg-white rounded-lg shadow max-md:pb-10">
                 <a href="#">
                     {
                         displayMap
