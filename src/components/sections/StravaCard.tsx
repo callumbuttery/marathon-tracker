@@ -16,7 +16,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
     let displayDistance;
     if (props.obj.distance) {
         displayDistance =
-            <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
+            <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content mb-10">
                 <p className="flex justify-center text-center font-teko">{distanceCalculator(props.obj.distance)}km</p>
                 <span className='font-teko'>Distance</span>
                 <Icon className="flex mx-auto" path={mdiMapMarkerDistance} size={1} color={'purple'} />
@@ -49,18 +49,18 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                     <a href="#">
                         <h5 className="flex justify-center text-center mb-2 text-3xl font-bold tracking-tight text-gray-900 font-teko">{props.obj.name}</h5>
                     </a>
-                    <div className="flex justify-center mt-8 mb-10">
+                    <div className="flex justify-center mt-8">
                         {
                             displayDistance
                         }
-                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
+                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content mb-10">
                             <span className="countdown font-teko">
                                 <span>{props.obj.average_heartrate?.toFixed(0)}</span>
                             </span>
                             <span className='font-teko'>Average HR</span>
                             <Icon className="flex mx-auto" path={mdiHeart} size={1} color={'red'} />
                         </div>
-                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
+                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content mb-10">
                             <span className="countdown font-teko">
                                 <span>{props.obj.max_heartrate?.toFixed(0)}</span>
                             </span>
