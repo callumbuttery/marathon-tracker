@@ -25,7 +25,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
 
     let displayMap;
     if (props?.obj?.map?.summary_polyline) {
-        displayMap = <img className="rounded-t-lg h-48 w-96" src={`http://maps.googleapis.com/maps/api/staticmap?path=enc:${props?.obj?.map?.summary_polyline}&size=600x400&zoom=13&format=jpg&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`}></img>
+        displayMap = <img className="rounded-t-lg h-48 w-96" src={`http://maps.googleapis.com/maps/api/staticmap?path=enc:${props.obj.map.summary_polyline}&size=600x400&zoom=13&format=jpg&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`}></img>
     } else if (props.obj.name == 'Tough Mudder 2023' && !props?.obj?.map?.summary_polyline) {
         displayMap = <img className="rounded-t-lg h-48 w-96" src={toughMudder2023}></img>
     } else {
