@@ -14,7 +14,6 @@ interface statsData {
 }
 
 export const StatsCardSubSestion: React.FC<statsData> = (props) => {
-    console.log('props: ', props);
     return (
         <div>
             <div className="bg-white max-w-md mx-auto rounded-lg">

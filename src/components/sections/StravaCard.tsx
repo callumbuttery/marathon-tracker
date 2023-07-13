@@ -39,7 +39,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                 <Icon path={mdiTrophyVariant} size={2} color="gold" className="flex justify-center mx-auto mb-2" />
 
             }
-            <div className="h-96 max-w-sm bg-white rounded-lg shadow">
+            <div className="h-96 max-w-sm bg-white rounded-lg shadow max-sm:pb-10">
                 <a href="#">
                     {
                         displayMap
@@ -53,14 +53,14 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                         {
                             displayDistance
                         }
-                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content max-sm:pb-5">
+                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
                             <span className="countdown font-teko">
                                 <span>{props.obj.average_heartrate?.toFixed(0)}</span>
                             </span>
                             <span className='font-teko'>Average HR</span>
                             <Icon className="flex mx-auto" path={mdiHeart} size={1} color={'red'} />
                         </div>
-                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content max-sm:pb-">
+                        <div className="mx-5 flex flex-col text-center bg-neutral rounded-box text-neutral-content">
                             <span className="countdown font-teko">
                                 <span>{props.obj.max_heartrate?.toFixed(0)}</span>
                             </span>
