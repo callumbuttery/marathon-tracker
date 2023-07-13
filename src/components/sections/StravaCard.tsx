@@ -45,7 +45,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                         displayMap
                     }
                 </a>
-                <div className="p-5 max-md:pb-10">
+                <div className="p-5 max-md:mb-10">
                     <a href="#">
                         <h5 className="flex justify-center text-center mb-2 text-3xl font-bold tracking-tight text-gray-900 font-teko">{props.obj.name}</h5>
                     </a>
