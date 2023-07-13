@@ -33,7 +33,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
     }
 
     return (
-        <div className="w-96 mx-10 mt-24 drop-shadow-2xl hover:scale-110 hover:duration-300 max-sm:w-72 max-sm:mx-0 max-md:pb-10">
+        <div className="w-96 mx-10 mt-24 drop-shadow-2xl hover:scale-110 hover:duration-300 max-sm:w-72 max-sm:mx-0">
             {
                 props.obj.type == 'Event' &&
                 <Icon path={mdiTrophyVariant} size={2} color="gold" className="flex justify-center mx-auto mb-2" />
@@ -45,7 +45,7 @@ export const StravaCard: React.FC<expectedProps> = (props) => {
                         displayMap
                     }
                 </a>
-                <div className="p-5">
+                <div className="p-5 max-md:pb-10">
                     <a href="#">
                         <h5 className="flex justify-center text-center mb-2 text-3xl font-bold tracking-tight text-gray-900 font-teko">{props.obj.name}</h5>
                     </a>
